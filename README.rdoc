@@ -22,7 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
+### Screenshots
+![index](http://s33.postimg.org/54v57o4vj/download_1.png)
+![review](http://s33.postimg.org/4qheoyvfz/download2.png)
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
