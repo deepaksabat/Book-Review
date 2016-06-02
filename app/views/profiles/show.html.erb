@@ -1,0 +1,40 @@
+
+<html>
+
+
+<body>
+
+<b>Show User</b>
+
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @profile.image.url, height: "150", width: "150", class: "img-thumbnail"%>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profile.name %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%= @profile.address %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @profile.birthday %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @profile.tel %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @profile.gender %>
+</p>
+
+<%= link_to "Edit", edit_profile_path(current_user.profile), class: "btn btn-primary" %>
+
+</body>
+</html>

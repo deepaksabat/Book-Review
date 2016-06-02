@@ -1,0 +1,21 @@
+<div class="col-md-6 col-md-offset-3">
+<div class="login-form">
+<%= simple_form_for @profile, :html => { :multipart => true } do |f| %>
+	<div class="form-input">
+	<%= f.file_field :image %>
+	<%= f.input :name, label:"Name" %>
+	<%= f.input :address, as: :text %>
+	<%= f.date_field :birthday %>
+	<%= f.input :tel %>
+	<p>
+    <b>Gender:</b>
+    <%= f.radio_button :gender, 'male' %> Male
+    <%= f.radio_button :gender, 'female' %> Female
+    </p>
+    </div>
+    <div class="form-action">
+	<%= f.button :submit, :class => 'btn-custom2' %>
+	</div>
+<% end %> 
+</div>
+</div>
